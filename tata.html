@@ -1,0 +1,10 @@
+<p id="p1">Všechno nejlepší k narozeninám!</p>
+<button onclick="addemoji()">nový emoji</button>
+<script>
+let a = ["🥳","🙌","🎂","🎆","🎇","🎈","🎉","🎊","🎁","🎀","🪅","VŠECHNO NEJLEPŠÍ!"];
+function addemoji() {
+ let i = Math.floor(Math.random() * a.length);
+ let r = a[i];
+ document.getElementById("p1").innerHTML += r;
+}
+</script>
